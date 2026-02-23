@@ -19,17 +19,19 @@ This skill allows OpenClaw to delegate tasks to external models hosted on the NV
 
 ## Usage
 
-### Direct Command
+### 查看可用模型
+```bash
+python3 scripts/nim_call.py list
+```
+
+### 调用模型
 ```bash
 python3 scripts/nim_call.py <model_alias> "<prompt>"
 ```
 
-### Supported Aliases
-- `glm5`: Zhipu AI GLM-5
-- `kimi`: Moonshot Kimi-k2.5
-- `r1`: DeepSeek R1 (Llama-8B Distill)
-- `llama`: Llama 3.1 405B
-- `phi`: Microsoft Phi-4
+## 支持的常用别名
+(运行 `list` 命令查看完整实时列表)
+- `glm5`, `kimi`, `r1-qwen-32b`, `llama33`, `phi4`, `qwq`
 
 ## Integration with CLAUDE.md
 Add this to your project's `CLAUDE.md`:
